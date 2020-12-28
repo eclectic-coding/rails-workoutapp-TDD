@@ -5,7 +5,7 @@ require File.expand_path("../config/environment", __dir__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require "rspec/rails"
-require 'fuubar'
+require "fuubar"
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
@@ -17,5 +17,5 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
-  config.fuubar_progress_bar_options = { format: 'Completed Tests <%B> %p%% %a' }
+  config.fuubar_progress_bar_options = { format: "Completed Tests <%B> %p%% %a" }
 end

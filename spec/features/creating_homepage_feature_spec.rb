@@ -1,12 +1,12 @@
-require 'rails_helper'
+require "rails_helper"
 
-RSpec.feature 'Creating Home page', type: :feature do
+RSpec.feature "Creating Home page", type: :feature do
   scenario do
-    visit '/'
+    visit "/"
 
-    expect(page).to have_link('Home')
-    expect(page).to have_link('Athletes Den')
-    expect(page).to have_content('Workout Lounge!')
-    expect(page).to have_content('Show off your workout')
+    expect(page).to have_link("Home")
+    expect(page).to have_link("Athletes Den")
+    expect(page).to have_content("Workout Lounge!")
+    expect(page).to have_content("Show off your workout")
   end
 end
