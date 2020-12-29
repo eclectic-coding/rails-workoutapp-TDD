@@ -12,8 +12,10 @@ module WorkoutApp
     config.load_defaults 5.2
 
     config.generators do |g|
-      g.stylesheets false
-  end
+      g.test_framework  nil
+      g.assets false
+      g.helper false
+    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
